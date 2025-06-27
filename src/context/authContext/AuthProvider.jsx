@@ -22,7 +22,7 @@ const AuthProvider = ({ children }) => {
             // this is for set the token in cookies of application
             if (currentUser?.email) {
                 const user = { email: currentUser?.email }
-                axios.post('http://localhost:6900/jwt', user, { withCredentials: true })
+                axios.post('https://job-portal-server-site-six.vercel.app/jwt', user, { withCredentials: true })
                     .then(() => {
                         // console.log('login token', res.data);
                         setLoader(false);
@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
 
             // this is for clear the token from the cookies of application 
             else {
-                axios.post('http://localhost:6900/logOut', {}, { withCredentials: true })
+                axios.post('https://job-portal-server-site-six.vercel.app/logOut', {}, { withCredentials: true })
                     .then(() => {
                         // console.log('Logout', res.data);
                         setLoader(false);

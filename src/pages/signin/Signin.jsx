@@ -44,7 +44,7 @@ const Signin = () => {
                 // }
 
 
-                // axios.post('http://localhost:6900/jwt', user, { withCredentials: true })
+                // axios.post('https://job-portal-server-site-six.vercel.app/jwt', user, { withCredentials: true })
                 //     .then(res => {
                 //         console.log(res.data)
                 //     })

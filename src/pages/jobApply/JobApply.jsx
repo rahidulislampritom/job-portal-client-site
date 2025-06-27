@@ -31,7 +31,7 @@ const JobApply = () => {
 
 
         // this is for posting data of job application from apply now 
-        fetch('http://localhost:6900/job-applications', {
+        fetch('https://job-portal-server-site-six.vercel.app/job-applications', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
